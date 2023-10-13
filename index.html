@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart House | Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./clock.css">
+    <link rel="stylesheet" href="./base.css">
+    <link href="./font/fontawesome-free-6.4.2-web/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+</head>
+<body>
+    <!-- <header class="header1">
+        <h1>My house</h1>
+    </header> -->
+    
+    <div class="container">
+        <aside class="taskbar">
+            <a href="#" class="taskbar_icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <a href="index.html" class="taskbar_icon active">                
+                <i class="fa-solid fa-house-signal"></i>
+            </a>
+            <a href="todolist.html" class="taskbar_icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </a>
+            <a href="#"class="taskbar_icon">
+                <i class="fa-solid fa-users"></i>
+            </a>            
+        </aside>
+
+        <main class="mainscreen">
+            <div class="search">
+                <form class="search-box">
+                    <input type="text" class="search-text" 
+                    placeholder="Search ...">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>           
+            <form >
+                <h2>Analytics</h2>
+                <div class="analystic">
+                    <div class="box box1">
+                        <div class="temp">
+                            <a href="" class="box-icon-link">
+                                <i class="fa-solid fa-temperature-three-quarters"></i>
+                            </a>
+                            <p class="analystic-value">
+                                <div  class="dv">
+                                    <span id="nhietdo">34</span>°C
+                                </div>
+                            </p>                            
+                            <h4 class="thongso">Temperature</h4>
+                        </div>
+                    </div>
+                    <div class="box box2">
+                        <div class="humi">
+                            <a href="" class="box-icon-link">
+                                <i class="fa-solid fa-percent"></i>
+                            </a>
+                            <p class="analystic-value">
+                                <div  class="dv">
+                                    <span id="doam">34</span>%
+                                </div>
+                            </p> 
+                            <h4 class="thongso">Humidity</h4>
+                        </div>
+                    </div>
+                    <div class="box box3">
+                        <div class="rain">
+                            <a href="" class="box-icon-link">
+                                <i class="fa-solid fa-fire-flame-simple"></i>
+                            </a>
+                            <p class="analystic-value">
+                                <div  class="dv">
+                                    <span id="gas">34</span>
+                                </div>
+                            </p> 
+                            <h4 class="thongso">Gas</h4>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            
+            <form>
+                <h2>My device</h2>
+                <div class="box device device1">
+                    <h4 class="namedevice">Lamp
+                        <!-- <i class="fa-regular fa-lightbulb" style="color: #ff0000;"></i> -->
+                    </h4>
+                    <div class="control">
+                        <div class="statusdevice">
+                            <h3 id="lamp_1_state">OFF</h3>
+                        </div>                        
+                        <div class="toggle">
+                            <div class="toggle-button" id="lamp_1_toggle"></div>        
+                        </div>
+                    </div>
+                </div>                
+                <div class="box device device2">
+                    <h4 class="namedevice">Air Condition</h4>
+                    <div class="control">
+                        <div class="statusdevice">
+                            <h3 id="air_state">OFF</h3>
+                        </div>
+                        <div class="toggle" >
+                            <div class="toggle-button" id="air_toggle"></div>        
+                        </div>
+                    </div>
+                </div>
+                <div class="box device device3">
+                    <h4 class="namedevice">Heat</h4>
+                    <div class="control">
+                        <div class="statusdevice">
+                            <h3 id="heat_state">OFF</h3>
+                        </div>
+                        <div class="toggle" >
+                            <div class="toggle-button" id="heat_toggle"></div>        
+                        </div>
+                    </div>
+                </div>
+                <div class="box device device1">
+                    <h4 class="namedevice">TV</h4>
+                    <div class="control">
+                        <div class="statusdevice">
+                            <h3 id="tv_state">OFF</h3>
+                        </div>                        
+                        <div class="toggle">
+                            <div class="toggle-button" id="tv_toggle"></div>        
+                        </div>
+                    </div>
+                </div>                
+                <div class="box device device2">
+                    <h4 class="namedevice">Fan</h4>
+                    <div class="control">
+                        <div class="statusdevice">
+                            <h3 id="fan_state">OFF</h3>
+                        </div>
+                        <div class="toggle" >
+                            <div class="toggle-button" id="fan_toggle"></div>        
+                        </div>
+                    </div>
+                </div>
+                <div class="box device device3">
+                    <h4 class="namedevice">Wifi</h4>
+                    <div class="control">
+                        <div class="statusdevice">
+                            <h3 id="wifi_state">OFF</h3>
+                        </div>
+                        <div class="toggle" >
+                            <div class="toggle-button" id="wifi_toggle"></div>        
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+        </main>
+        
+        <div class="sidebar">
+            <div class="nav">                
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="clock">
+                <div class="numbers">
+                    <span style="--i:0;"><b>12</b></span>
+                    <span style="--i:1;"><b>3</b></span>
+                    <span style="--i:2;"><b>6</b></span>
+                    <span style="--i:3;"><b>9</b></span>
+                    <div class="circle" id="hr"><i></i></div>
+                    <div class="circle" id="mn"><i></i></div>
+                    <div class="circle" id="sc"><i></i></div>
+                </div>
+            </div>
+            <script>
+                let hr = document.getElementById('hr');
+                let mn = document.getElementById('mn');
+                let sc = document.getElementById('sc');
+
+                setInterval(()=>{
+                    let day = new Date();
+                    let hh = day.getHours() * 30;
+                    let mm = day.getMinutes() * 6;
+                    let ss = day.getSeconds() * 6;
+
+                    hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+                    mn.style.transform = `rotateZ(${mm}deg)`;
+                    sc.style.transform = `rotateZ(${ss}deg)`;
+                })
+            </script>
+
+            <div class="calendar">
+                <div class="month flex">
+                    <div class="calendar_icon prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="content">
+                        <h2>October 2023</h2>
+                        <p>October 4, 2023</p>
+                    </div>
+                    <div class="calendar_icon next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>                        
+                </div>
+                <div class="weekdays flex">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+
+                <div class="days flex">
+                    <!-- <div class="prev-day">26</div>
+                    <div class="prev-day">27</div>
+                    <div class="prev-day">28</div>
+                    <div class="prev-day">29</div>
+                    <div class="prev-day">30</div>
+                    <div class="">1</div>
+                    <div class="today">11</div>
+                    <div class="">31</div>
+                    <div class="next-day">1</div>
+                    <div class="next-day">2</div>
+                    <div class="next-day">3</div>
+                    <div class="next-day">4</div>
+                    <div class="next-day">5</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">            
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div> </h3>
+                <p>Số 1 Võ văn Ngân, TP Thủ Đức, Thành phố Hồ Chí Minh</p>
+                <p class="email_id">nguyentruc@gmail.com</p>
+                <h4>+84 - 866026635</h4>
+            </div>
+            <div class="col">
+                <h3>Link <div class="underline"><span></span></h3>
+                <ul style="margin-top: 20px;">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="col">      
+                <!-- <h3 class="social">Social</h3>           -->
+                <div class="social_icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<script src="calendar.js"></script>   
+<script type="module" src="control.js"></script>
+    <!-- <script>
+    let toggle = document.getElementById("toggle1");
+    let statusdevice = document.getElementById("lamp_state");
+
+    function Animatedtoggle1(){
+        toggle.classList.toggle("active");
+
+        if(toggle.classList.contains("active")){
+            statusdevice.innerHTML = "ON";
+        }
+        else{
+            statusdevice.innerHTML = "OFF";
+        }
+    }
+
+    let toggle2 = document.getElementById("toggle2");
+    let statusdevice2 = document.getElementById("air_state");
+
+    function Animatedtoggle2(){
+        toggle2.classList.toggle("active");
+
+        if(toggle2.classList.contains("active")){
+            statusdevice2.innerHTML = "ON";
+        }
+        else{
+            statusdevice2.innerHTML = "OFF";
+        }
+    }
+    
+    let toggle3 = document.getElementById("toggle3");
+    let statusdevice3 = document.getElementById("heat_state");
+
+    function Animatedtoggle3(){
+        toggle3.classList.toggle("active");
+
+        if(toggle3.classList.contains("active")){
+            statusdevice3.innerHTML = "ON";
+        }
+        else{
+            statusdevice3.innerHTML = "OFF";
+        }
+    }
+</script> -->
+
+
+
+
+<script src="functions.js"></script>
+        
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCRX5UlbPr4apW7kWPSfNOcX0wShaxfd3o",
+    authDomain: "dht11-1ca81.firebaseapp.com",
+    databaseURL: "https://dht11-1ca81-default-rtdb.firebaseio.com",
+    projectId: "dht11-1ca81",
+    storageBucket: "dht11-1ca81.appspot.com",
+    messagingSenderId: "1033761407283",
+    appId: "1:1033761407283:web:608a4f6f9a6727917f7e46",
+    measurementId: "G-8GCZQ48BXQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  //functions
+  // make sure that the name in ' ' match with name of your database child
+  var nhietDo = document.getElementById('nhietdo');
+  var dbRef = firebase.database().ref().child('Nhiet do');
+  var doAm = document.getElementById('doam');
+  var dbRef2 = firebase.database().ref().child('Do am');
+  var khiGas = document.getElementById('gas');
+  var dbRef3 = firebase.database().ref().child('Khi gas');
+  dbRef.on('value', snap => nhietDo.innerText = snap.val());
+  dbRef2.on('value', snap => doAm.innerText = snap.val());
+  dbRef3.on('value', snap => khiGas.innerText = snap.val());
+ 
+ 
+</script>
+</body>
+</html>
+
+

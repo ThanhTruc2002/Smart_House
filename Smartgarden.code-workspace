@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../web_app_firebase-main/web-app"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Smartgarden"
+	}
+}

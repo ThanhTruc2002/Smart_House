@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart House | Schedule</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./todolist.css">
+    <link rel="stylesheet" href="./base.css">
+    <link href="./font/fontawesome-free-6.4.2-web/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+</head>
+<body>
+    <!-- <header class="header1">
+        <h1>My house</h1>
+    </header> -->
+    
+    <div class="container">
+        <aside class="taskbar">
+            <a href="#" class="taskbar_icon">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <a href="index.html" class="taskbar_icon">                
+                <i class="fa-solid fa-house-signal"></i>
+            </a>
+            <a href="todolist.html" class="taskbar_icon active">
+                <i class="fa-solid fa-chart-line"></i>
+            </a>
+            <a href="#"class="taskbar_icon">
+                <i class="fa-solid fa-users"></i>
+            </a>            
+        </aside>
+
+        <main class="mainscreen">
+            <div class="search">
+                <form class="search-box">
+                    <input type="text" class="search-text" 
+                    placeholder="Search ...">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>           
+            <form class="schedule">
+                <div class="left">
+                    <div class="calendar-schedule">
+                        <div class="month">
+                            <i class="fa-solid fa-chevron-left prev"></i>
+                            <div class="date"></div>
+                            <i class="fa-solid fa-chevron-right next"></i>
+                        </div>
+                        <div class="weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="days"></div>
+                        <div class="goto-today">
+                            <div class="goto">
+                                <input type="text" placeholder="mm/yyyy" class="date-input">
+                                <button class="goto-btn">Go</button>
+                            </div>
+                            <button class="today-btn">Today</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="today-date">
+                        <div class="event-day">Thu</div>
+                        <div class="event-date">12 October 2023</div>
+                    </div>
+                    <div class="events">
+                        <!-- add events through js -->
+                    </div>
+                    <div class="add-event-wrapper">
+                        <div class="add-event-header">
+                            <div class="title">Add Event</div>
+                            <i class="fas fa-times close"></i>
+                        </div>
+                        <div class="add-event-body">
+                            <div class="add-event-input">
+                                <input type="text" placeholder="Event Name" class="event-name">
+                            </div>
+                            <div class="add-event-input">
+                                <input type="text" placeholder="Event Time From" class="event-time-from">
+                            </div>
+                            <div class="add-event-input">
+                                <input type="text" placeholder="Event Time To" class="event-time-to">
+                            </div>
+                        </div>
+                        <div class="add-event-footer">
+                            <button class="add-event-btn">Add Event</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="add-event">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+            
+            
+        </main>
+        
+              
+        
+        
+        <!-- <div class="vertical-line"></div> -->
+    </div>
+
+        <footer>
+        <div class="row">            
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div> </h3>
+                <p>Số 1 Võ văn Ngân, TP Thủ Đức, Thành phố Hồ Chí Minh</p>
+                <p class="email_id">nguyentruc@gmail.com</p>
+                <h4>+84 - 866026635</h4>
+            </div>
+            <div class="col">
+                <h3>Link <div class="underline"><span></span></h3>
+                <ul style="margin-top: 20px;">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="col">      
+                <!-- <h3 class="social">Social</h3>           -->
+                <div class="social_icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <script src="todolist.js"></script>
+</body>
+</html>
+
+

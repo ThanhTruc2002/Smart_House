@@ -1,0 +1,378 @@
+/* body{
+    background-color: #33333327;
+} */
+
+.header1{
+    /* background-color: #83d8ff65;
+    position: sticky; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.container{
+    display: grid;
+    width: 98%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    grid-template-columns: 10rem auto 28rem;
+}
+
+.taskbar {
+    position: relative;
+    top: 3rem;
+    height: 90vh;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #87acd9a1; */
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px #152b4a66,
+    -6px -6px 10px rgba(255,255,255,1);
+}
+
+.taskbar .taskbar_icon {
+    font-size: 3rem;
+    cursor: pointer;
+    width: 100%;
+    color: gray;
+    padding: 0 15px;
+    margin: 10px 0;
+    /* height: 5rem; */
+    /* display: flex; */    
+}
+
+.taskbar .taskbar_icon i:hover{
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 2px;
+    font-size: 2.3rem;
+}
+
+.taskbar .taskbar_icon.active{
+    color: #6c9bdf;
+    background-color: #e5e4e4;
+    padding: 14px;
+} 
+
+.mainscreen {
+    display: flex;
+    flex-direction: column;
+    /* position: relative;
+    top: 5rem; */
+}
+
+.search{
+    box-sizing: border-box;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #d2d2d2; */
+}
+
+.search-box .search-text{
+    /* border: none; */
+    border: 1px solid #d2d2d2;
+    width: 50rem;
+    outline: none;
+    background: none;
+    margin: 10px 0px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.search-box .search-btn{
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border: 1px solid #d2d2d2;
+    margin: 0 5px;
+    padding: 15px 15px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.search-box .search-btn:hover{
+    background-color: #c4c4c4;
+    border: 1px solid #a0a0a0;
+    padding: 15px 15px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.analystic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.box {
+    height: 20rem;
+    width: 30rem;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.15),
+    inset -1px -1px 10px rgba(0,0,0,0.2 ),
+    -15px -15px 35px rgba(255,255,255,0.55);
+}
+.box1{
+    background-color: #d3ecf1;
+}
+
+.box2{
+    background-color: #eff0d1;
+}
+
+.box3{
+    background-color: #d3ead8;
+}
+
+.humi, 
+.temp,
+.rain {
+    padding: 25px;
+}
+.box-icon-link{
+    font-size: 4rem;
+    color: black;
+    display: inline-block;
+    align-items: center;
+}
+
+.analystic-value{
+    /* display: flex;
+    flex-wrap: nowrap; */
+}
+
+.dv{
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 50px 0 20px;
+    font-weight: bold;
+}
+
+hr{
+    height: 2px;
+    width: 80%;
+    padding-left: 5px;
+    background-color: #535353;
+    box-shadow: 5px 5px 15px #152b4a66,
+    -6px -6px 10px rgba(255,255,255,1);
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 30px 70px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+#nhietdo,
+#doam,
+#gas {
+    font-size: 3.5rem;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.thongso {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.device {
+    
+    position: relative;
+    height: 15rem;
+    width: 30rem;
+    background-color: #f1f1f1;   
+}
+
+.device .namedevice{
+    /* display: inline-block;
+    align-items: center;
+    margin-left: 26px;
+    margin-top: 45px; */
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 2rem;
+    font-weight: 400; 
+}
+
+.device .control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    margin-top: -20px;
+}
+
+.device .control .statusdevice{
+    position: absolute;
+    left: 10%;
+    margin-top: 20px;
+    font-size: 3.5rem;
+}
+
+.device .control .toggle {
+    position: absolute;
+    left: 15rem;
+    width: 90px;
+    height: 50px;
+    appearance: none;
+    background: #333;
+    border-radius: 26px;
+    position: relative;
+}
+
+.device .control .toggle .toggle-button{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5.5px;
+    left: 5.5px;
+    background: #efe2bf;
+    border-radius: 50%;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.device .control .toggle.active{
+    background: #83d8ff;
+}
+
+.device .control .toggle.active .toggle-button{
+    left: 45px;
+}
+
+footer{
+    width: 100%;
+    bottom: 0px;
+    background: linear-gradient(to right, #000,#222221);
+    color: #fff;
+    padding: 10px 36px 0px;
+    font-size: 13px;
+    line-height: 20px; 
+    position: relative;
+    top: 7rem;
+}
+
+.row{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15px;    
+}
+.logo{
+    height: 66px;
+    width: 230px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: -200px;
+}
+.col p{
+    color: #fff;
+    size: 13px;
+    margin-left: -210px;
+    margin-top: -5px;
+    padding: 3px;
+}
+
+.col h4{
+    margin-left: -200px;
+}
+.col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: -242px;
+}
+.col ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social h3 {
+    margin-left: -200px;
+}
+
+.social_icons{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    margin: 130px 0 0;
+}
+
+.social_icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #ccc;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 97%;
+        grid-template-columns: 10rem auto 25rem;
+    }
+    main .analystic{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .box{
+        min-width: 80%;
+    }
+    .search-box .search-text{
+        width: 50%;
+    }
+    /* .device .control .toggle{
+        position: absolute;
+        left: 300px;
+    } */
+}
